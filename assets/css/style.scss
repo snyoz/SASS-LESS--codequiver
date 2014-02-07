@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    Basic Insert
+\*------------------------------------*/
+
+// @import "template_info"; // Only for Wordpress
+@import "vars";
+@import "normalize";
+
+
+/*------------------------------------*\
+    My CSS Inserts
+\*------------------------------------*/
+@import "fonts";
+@import "mixins"; 
+
+
+
+/*------------------------------------*\
+    Template Structure
+\*------------------------------------*/
+
+@import "template/header";
+@import "template/footer";
+
+
+/*------------------------------------*\
+    Modules
+\*------------------------------------*/
+
+// @import "modules/accordion.scss";
+// @import "modules/lightbox.scss";
+// @import "mediaqueries";
+
+// @import "overrides";

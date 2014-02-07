@@ -1,0 +1,70 @@
+/*
+# COMMON VARIABLES
+
+* all variables are prefixed with $projektname
+* unprefixed variables should be used locally in other sass files
+* var names for direct use in sass files are kept short: $projektname-xx-foobar
+
+* projektname-color: defines abstract colors based on appearance and should not be used directly (#000 and #fff don't need names)
+* projektname-fg: applies foreground color based on the use case and is used in other sass files
+* projektname-bg: same for background colors
+* projektname-bc: border colors
+
+* projektname-fs: font-size
+* projektname-lh: corresponding line-height
+* projektname-ff: font-families
+
+* projektname-screen: defines screen widths for media queries
+* projektname-mq: media query strings
+
+* projektname-radius: for use with border-radius
+* projektname-shadow: for use with box-shadow and text-shadow
+
+*/
+
+
+
+///////////////////////////////////////////////////////////
+// COLORS
+///////////////////////////////////////////////////////////
+
+
+
+
+///////////////////////////////////////////////////////////
+// FONTS
+///////////////////////////////////////////////////////////
+
+// font-sizes (fs) and line-heights (lh)
+
+// defaults
+
+
+// font-family
+
+
+
+
+///////////////////////////////////////////////////////////
+// GRIDS
+///////////////////////////////////////////////////////////
+
+
+
+
+///////////////////////////////////////////////////////////
+// SKIN
+///////////////////////////////////////////////////////////
+
+// border-radius
+// defaults
+
+
+// box-shadow
+// defaults
+
+
+// timings
+$short: .2s;
+$medium: .5s;
+$long: 1s;

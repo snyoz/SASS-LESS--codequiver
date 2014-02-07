@@ -1,0 +1,152 @@
+/* Avoid adding project specific values in this file
+   Add your values to _vars.less
+
+   Please add new generic helpers also to the ume Git project
+   See README.md for more infos.
+*/
+.accordion {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.accordion > dd {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.5s ease-in-out;
+  -moz-transition: height 0.5s ease-in-out;
+  -ms-transition: height 0.5s ease-in-out;
+  -o-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+}
+.accordion > dd .form_center {
+  vertical-align: bottom;
+  padding-bottom: 11px;
+}
+.accordion > dd .form_center input:nth-child(2) {
+  margin-left: 100px;
+}
+.accordion > dd.notransition {
+  -webkit-transition: all 0s ease-out;
+  -moz-transition: all 0s ease-out;
+  -ms-transition: all 0s ease-out;
+  -o-transition: all 0s ease-out;
+  transition: all 0s ease-out;
+}
+.accordion {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  max-width: 520px;
+}
+.accordion h2 {
+  display: inline;
+  font-size: 19px;
+  color: $blf-white;
+}
+.accordion > dt {
+  margin: 0 auto;
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 100;
+  font-size: 19px;
+  color: $blf-white;
+  background-color: $blf-black;
+  @include transition();
+}
+.accordion > dt:after {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  content: '';
+  width: 26px;
+  height: 14px;
+  background: url("../img/icon_sprite.png") no-repeat 0px 0px;
+}
+
+.accordion > dt:before {
+  display: inline-block;
+  position: absolute;
+  left: 72px;
+  top: 4px;
+  content: '';
+  width: 2px;
+  height: 36px;
+  background-color: #e1e1e1;
+}
+
+.accordion > dt span {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 3px 0 0 11px;
+  width: 20px;
+  height: 27px;
+  background-color: #002c77;
+  border-radius: 50%;
+  color: #ffffff;
+}
+* + html .accordion > dt {
+  position: static;
+}
+.accordion > dt:hover {
+  background: $blf-cherry;
+}
+.accordion > dt.section_2.active:after {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  content: '* Pflichtfeld';
+  font-size: 12px;
+  width: 62px;
+  font-family: arial;
+}
+.accordion > dt.active {
+  color: $blf-white;
+  background: $blf-cherry;
+  padding-bottom: 25px;
+}
+dt.active:after {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  content: '';
+  width: 26px;
+  height: 14px;
+  background: url("../img/icon_sprite.png") no-repeat 0px -87px;
+}
+
+.accordion > dd {
+  margin-bottom: 10px;
+  position: relative;
+  padding: 0px 60px 0 90px;
+  color: $blf-white;
+  background: $blf-cherry;
+  text-align: left;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 96%;
+    width: 2px;
+    background-color: #e1e1e1;
+    position: absolute;
+    left: 72px;
+  };
+}
+.accordion > dd fieldset {
+  margin: 30px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .accordion {
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 45px;
+    line-height: 35px;
+  }
+}
