@@ -7,7 +7,7 @@ Contains:
 
 --> some useful jQuery Plugins (Lightbox, Smoothscrolling, Accordion)
 
---> sexy '.SCSS' File Structure
+--> sexy '.SCSS' & '.LESS' File Structure
 
 --> HTML 5 Boilerplate
 
