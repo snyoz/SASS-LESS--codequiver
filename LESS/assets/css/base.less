@@ -12,22 +12,20 @@ html {
 
 body{
     margin:0;
-    font-family: @al-font-base;
-    font-size: @al-relative-fontsize;
-    color: @al-black;
-    background-color: @al-mainbg;
+    font-family: @projectname-font-base;
+    font-size: @projectname-relative-fontsize;
+    color: @projectname-paragraph-color;
 }
+
 a{
     text-decoration: none;
     color: inherit;
-    &:hover{
-        color: black;
-    }
 }
+
 p{
     margin:0 0 0 0;
     padding:0;
-    font-size: @al-normal-fs;
+    font-size: @projectname-normprojectname-fs;
     a{
         text-decoration:underline;
         &:hover{
@@ -92,7 +90,7 @@ table{
     }
     th,td{
         padding:0;
-        vertical-align:top;
+        verticprojectname-align:top;
     }
     th{
         font-weight:normal;
@@ -125,16 +123,4 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 .h4{
     line-height: 2.2em;
-}
-
-.highlight {
-    color: @al-skyblue;
-}
-
-.grey_text {
-    color: @al-lightgreyfont;
-}
-
-.print{
-    display:none;
 }

@@ -49,11 +49,11 @@
 
 @base-fontsize: 16px;
 @base-lineheight: 24px;
-@acc-horizontal-height: 200px;
-@acc-horizontal-width: 100%;
-@acc-horizontal-handlerWidth: 10%;
-@acc-horizontal-sections: 5;
-@acc-horizontal-padding: 3%;
+@acc-horizontprojectname-height: 200px;
+@acc-horizontprojectname-width: 100%;
+@acc-horizontprojectname-handlerWidth: 10%;
+@acc-horizontprojectname-sections: 5;
+@acc-horizontprojectname-padding: 3%;
 
 .accordion{
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -87,7 +87,7 @@ dl, dd, dt{
         cursor: pointer;
         color: #2980b9;
         #acc-transition > .short;
-        background-color: @al-white;
+        background-color: @projectname-white;
         margin-bottom: 0;
         // IE7
         *+html &{
@@ -96,8 +96,8 @@ dl, dd, dt{
 
         &.active{
             color: #444;
-            background: @al-white;
-            // border-bottom: 1px solid @al-lightgrey;
+            background: @projectname-white;
+            // border-bottom: 1px solid @projectname-lightgrey;
             span {
                 display: none;
             }

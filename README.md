@@ -1,7 +1,6 @@
 codequiver
 ==========
 
-// Boilerplate added (20140207)
 
 Contains:
 
@@ -11,7 +10,7 @@ Contains:
 
 --> HTML 5 Boilerplate
 
---> jQuery 1.9.1 (update if u want)
+--> jQuery 2.1.4
 
 --> Normalize CSS 3.0
 
